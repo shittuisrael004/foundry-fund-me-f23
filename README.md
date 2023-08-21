@@ -1,9 +1,11 @@
-1. Proper README
-2. Integration Tests
-3. Programatic verification
-4. Push to GitHub
+# Fund Me
 
-## Foundry
+## About 
+This is a crowd sourcing app that allow deposits and funding from anyone but withdrawal can only be done by the deployer of the smart contract
+
+## Getting started
+
+### Foundry
 
 **Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
@@ -14,58 +16,58 @@ Foundry consists of:
 -   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
 -   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
 
-## Documentation
+### Documentation
 
 https://book.getfoundry.sh/
 
-## Usage
+### Usage
 
-### Build
-
+#### Build
 ```shell
 $ forge build
 ```
-
-### Test
-
+#### Test
 ```shell
 $ forge test
 ```
-
-### Format
-
+#### Format
 ```shell
 $ forge fmt
 ```
-
-### Gas Snapshots
-
+#### Gas Snapshots
 ```shell
 $ forge snapshot
 ```
-
-### Anvil
-
+#### Anvil
 ```shell
 $ anvil
 ```
-
-### Deploy
-
+#### Deploy
 ```shell
 $ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
 ```
-
-### Cast
-
+#### Cast
 ```shell
 $ cast <subcommand>
 ```
-
-### Help
-
+#### Help
 ```shell
 $ forge --help
 $ anvil --help
 $ cast --help
+```
+### Chainlink Brownie Contracts
+
+#### Installation
+
+```shell
+forge install smartcontractkit/chainlink-brownie-contracts/ --no-commit
+```
+
+### Foundry Devops 
+
+#### Installation
+
+```shell
+forge install Cyfrin/foundry-devops --no-commit
 ```
